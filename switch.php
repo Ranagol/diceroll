@@ -53,4 +53,11 @@ switch ($randomNumber) {
 		break;
 }
 
+$_SESSION["randomNumber1"] = $randomNumber1;
+$_SESSION["randomNumber2"] = $randomNumber2;
+$_SESSION["randomNumber3"] = $randomNumber3;
+$_SESSION["randomNumber4"] = $randomNumber4;
+
+
+
 ?>

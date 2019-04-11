@@ -1,8 +1,48 @@
 <?php
+session_start();
+
 if (isset($_POST)) {
 	var_dump($_POST);
 	$randomNumber = (rand(1,6));
 }
+
+
+$randomNumber1 = $_SESSION["randomNumber1"];
+$randomNumber2 = $_SESSION["randomNumber2"];
+$randomNumber3 = $_SESSION["randomNumber3"];
+$randomNumber4 = $_SESSION["randomNumber4"];
+
+
+$differentRolls = implode('', $_POST);
+
+
+
+switch ($differentRolls) {
+	case 'roll1':
+		$randomNumber1 = (rand(1,6));
+		echo 'random number 1 generated';
+		break;
+	case 'roll2':
+		$randomNumber2 = (rand(1,6));
+		echo 'random number 2 generated';
+		break;
+	case 'roll3':
+		$randomNumber3 = (rand(1,6));
+		echo 'random number 3 generated';
+		break;
+	case 'roll4':
+		$randomNumber4 = (rand(1,6));
+		echo 'random number 4 generated';
+		break;	
+}
+
+echo $randomNumber1;
+echo $randomNumber2;
+echo $randomNumber3;
+echo $randomNumber4;
+
+//if (in_array('resetResults', $_POST)) {
+
 
 
 
@@ -22,6 +62,7 @@ imagedestroy($imSquare);//this will remove the unnecesary pictures from our syst
 
 
 require 'index.view.php';
+
 ?>
 
 
