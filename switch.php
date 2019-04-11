@@ -1,5 +1,15 @@
 <?php
 
+
+
+
+
+
+
+
+
+
+
 switch ($randomNumber) {
 	case '1':
 		$blueDot1 = $yellowDot;
@@ -52,6 +62,9 @@ switch ($randomNumber) {
 		$blueDot8 = $yellowDot;		
 		break;
 }
+
+
+
 
 $_SESSION["randomNumber1"] = $randomNumber1;
 $_SESSION["randomNumber2"] = $randomNumber2;

@@ -12,25 +12,25 @@
 	<h2>Dice roll</h2>
 	<div class="row">
 		<div class="col">
-			<?php print "<img src=image.png>";?>
+			<?php print "<img src=image1.png>";?>
 			<form method="POST">
 				<button value="roll1" name="dice1">Roll!</button>
 			</form>
 		</div>
 		<div class="col">
-			<?php print "<img src=image.png>";?>
+			<?php print "<img src=image2.png>";?>
 			<form method="POST">
 				<button value="roll2" name="dice2">Roll!</button>
 			</form>
 		</div>
 		<div class="col">
-			<?php print "<img src=image.png>";?>
+			<?php print "<img src=image3.png>";?>
 			<form method="POST">
 				<button value="roll3" name="dice3">Roll!</button>
 			</form>
 		</div>
 		<div class="col">
-			<?php print "<img src=image.png>";?>
+			<?php print "<img src=image4.png>";?>
 			<form method="POST">
 				<button value="roll4" name="dice4">Roll!</button>
 			</form>
